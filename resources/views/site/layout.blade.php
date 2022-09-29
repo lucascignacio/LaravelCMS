@@ -132,6 +132,13 @@
                                 </a>
                             </li>
                             </ul>
+                            <ul>
+                                <li>
+                                    <a href="/painel">
+                                        Painel de Controle
+                                    </a>
+                                </li>
+                                </ul>
                     </div>
                 </div>
             </div>
