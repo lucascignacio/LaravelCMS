@@ -18,10 +18,10 @@ class UploadController extends Controller
         $ext = $request->file->extension();
         $imageName = time() . '.' . $ext;
 
-        $request->file->move(public_path('media/images'), $imageName);
+        $request->file->move(public_path('../media/images'), $imageName);
         
         return [
-            'location' => asset('media/images/' . $imageName)
+            'location' => asset('../media/images/' . $imageName)
         ];
 
     }
