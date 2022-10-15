@@ -307,11 +307,6 @@ return [
             'icon'        => 'far fa-fw fa-file',
             'can'         => 'edit-users'
         ],
-        [
-            'text'        => 'Exibicão de Páginas',
-            'url'         => '/',
-            'icon'        => 'far fa-fw fa-file',
-        ],
         ['header' => 'Configuracões'],
         [
             'text' => 'Configuracões do Site',
