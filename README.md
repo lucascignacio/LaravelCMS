@@ -9,10 +9,6 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
-<img src="https://i.imgur.com/qERDZtE.png" alt="drawing" width=""/>
-
-
-
 In this repo we simulate a company database with customers and orders tables, and a web Laravel project which CMS(Content Management System) a graphic interface.
 
 Let's jump  to it
