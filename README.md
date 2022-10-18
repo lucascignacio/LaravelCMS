@@ -9,6 +9,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://img.shields.io/packagist/l/laravel/framework" alt="License"></a>
 </p>
 
+This is an application for you to create pages with names and descriptions, without having to know anything about programming, super intuitive and in addition, you can manage your entire team through an Adm account and see the most viewed pages.
+
 In this repo we simulate a company database with customers and orders tables, and a web Laravel project which CMS(Content Management System) a graphic interface.
 
 Let's jump  to it
