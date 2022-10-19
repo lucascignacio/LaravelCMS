@@ -1,14 +1,15 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
-use App\Http\Middleware\RedirectIfAuthenticated;
+use App\Http\Controllers\GoogleController;
 use App\Http\Controllers\Site\HomeController;
 use App\Http\Controllers\Site\SiteController;
-use App\Http\Controllers\Admin\PainelController;
+use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\UserController;
+use App\Http\Controllers\Admin\PainelController;
+use App\Http\Middleware\RedirectIfAuthenticated;
 use App\Http\Controllers\Admin\ProfileController;
 use App\Http\Controllers\Admin\SettingController;
-use App\Http\Controllers\Admin\PageController;
 use App\Http\Controllers\Admin\Auth\LoginController;
 use App\Http\Controllers\Admin\Auth\RegisterController;
 
@@ -30,6 +31,10 @@ Route::prefix('painel')->group(function(){
 
     Route::get('login',[LoginController::class, 'index'])->name('login');
     Route::post('login', [LoginController::class, 'authenticate']); 
+
+    //google URL
+    Route::get('/google/login', [GoogleController::class, 'loginWithGoogle'])->name('google.login');
+    Route::any('/google/callback', [GoogleController::class, 'callbackFromGoogle'])->name('callback');
 
     Route::get('register', [RegisterController::class, 'index'])->name('register');
     Route::post('register', [RegisterController::class,'register']);
